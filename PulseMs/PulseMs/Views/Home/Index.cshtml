@@ -1,0 +1,13 @@
+﻿@{
+    ViewBag.Title = "Sample MVC";
+}
+
+        <h2>Select information: </h2>
+        @Html.DropDownList("testList", new SelectList(new List<SelectListItem> { new SelectListItem { Selected = true, Text = "Personal Information", Value = "1" }, new SelectListItem { Selected = false, Text = "Address Information", Value = "2" }, new SelectListItem { Selected = false, Text = "Payment Information", Value = "3" } }, "Value", "Text"))
+
+        <br />
+        <div id="replaceContent">
+           
+        </div>
+
+<script type="text/javascript" src="~/Scripts/index.html.js"></script>
